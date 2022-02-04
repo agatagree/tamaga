@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 18pt;
+}
+
+@media screen and (max-width:1680px) {
+    html {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    html {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width:736px) {
+    html {
+        font-size: 11pt;
+    }
+}
+
+body {
+    color: #012B55;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+.tytul {
+    font-size: 3.0rem;
+    line-height: 1.2;
+    margin: 0 0 40px;
+}
+
+.opis {
+    margin: 0 0 32px;
+
+}
+
+section {
+    margin: 0 0 32px;
+}
+
+.www {
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+
+/* FLEXI GRID*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background: url(banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    flex: 50%;
+}
+
+.right {
+    background-color: #ffffff;
+    flex: 50%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0 0 40px;
+    padding: 60px 48px 28px 48px;
+    overflow: hidden;
+
+}
+
+/* Responsive layout - makes a one column */
+
+@media (max-width:500px) {
+    .flex-container {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
